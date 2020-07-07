@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test App 1</string>
+    <string name="input_one">Input One</string>
+    <string name="input_two">Input Two</string>
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+</resources>

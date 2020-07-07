@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.datasharing">
+
+    /
+    <application>
+        <receiver android:name=".DataReceiver"
+            android:enabled="true"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="com.example.datasharing" />
+        </intent-filter>
+        </receiver>
+    </application>
+</manifest>

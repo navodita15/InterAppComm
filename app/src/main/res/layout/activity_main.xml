@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_one"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical"
+        android:hint="@string/input_one"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/input_two"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical"
+        android:hint="@string/input_two"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/input_one"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/addition"
+        android:textSize="16sp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/sub_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/input_two"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/subtraction"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/input_one_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/add_button"
+        android:layout_marginTop="160dp"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:text="Input One - " />
+
+    <TextView
+        android:id="@+id/input_two_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/input_one_value"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="Input Two - " />
+
+    <TextView
+        android:id="@+id/action_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/input_two_value"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="Action- " />
+
+    <TextView
+        android:id="@+id/output_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/action_value"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="Output is - " />
+</RelativeLayout>

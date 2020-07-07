@@ -1,0 +1,3 @@
+include ':DataSharing'
+include ':app'
+rootProject.name = "TestApp1"
